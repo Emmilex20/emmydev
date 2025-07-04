@@ -173,7 +173,7 @@ const Navbar: React.FC = () => {
               <FaTimes />
             </button>
             <ul className="flex flex-col items-center space-y-8">
-              {navLinks.map((link, index) => (
+              {navLinks.map((link, _index) => (
                 <motion.li
                   key={link.name}
                   variants={linkVariants}
