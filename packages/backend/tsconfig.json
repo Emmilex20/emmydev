@@ -10,14 +10,14 @@
     "strict": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "baseUrl": "./src",
+    "baseUrl": ".",
     "paths": {
-      "@config/*": ["config/*"],
-      "@models/*": ["models/*"],
-      "@routes/*": ["routes/*"],
-      "@controllers/*": ["controllers/*"],
-      "@middleware/*": ["middleware/*"],
-      "@utils/*": ["utils/*"]
+      "@config/*": ["src/config/*"],
+      "@controllers/*": ["src/controllers/*"],
+      "@middleware/*": ["src/middleware/*"],
+      "@models/*": ["src/models/*"],
+      "@routes/*": ["src/routes/*"],
+      "@utils/*": ["src/utils/*"]
     },
     "moduleResolution": "node16"
   },

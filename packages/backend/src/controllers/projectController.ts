@@ -424,8 +424,8 @@ export const deleteProject = asyncHandler(async (req: Request, res: Response) =>
     // Delete thumbnail if it exists
     if (project.thumbnail && project.thumbnail.public_id) {
         console.log(`Attempting to delete thumbnail: ${project.thumbnail.public_id}`);
-        await deleteImageFromCloudinary(project.thumbnail.public_id).catch(err =>
-            console.warn(`Failed to delete thumbnail ${project.thumbnail?.public_id || 'unknown'}:`, err)
+        await deleteImageFromCloudinary(project.thumbnail.public_id).catch((err: any) => // <--- Add : any
+        console.warn(`Failed to delete thumbnail ${project.thumbnail?.public_id || 'unknown'}:`, err)
         );
     }
     // Delete additional images
