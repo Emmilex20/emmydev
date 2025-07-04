@@ -1,0 +1,32 @@
+{
+  "name": "emmanuel-agina-portfolio-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack portfolio website for Emmanuel Agina, built with React, Node.js, and MongoDB in a pnpm monorepo.",
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "start": "pnpm --filter backend start",
+    "build": "pnpm --filter frontend build",
+    "install:all": "pnpm install",
+    "clean": "pnpm -r clean && rimraf node_modules",
+    "test:all": "pnpm -r test --if-present"
+  },
+  "keywords": [
+    "fullstack",
+    "portfolio",
+    "react",
+    "nodejs",
+    "mongodb",
+    "pnpm",
+    "monorepo",
+    "web development",
+    "emmanuel agina"
+  ],
+  "author": "Emmanuel Agina",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.0"
+  }
+}

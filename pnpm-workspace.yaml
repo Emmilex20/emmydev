@@ -1,0 +1,4 @@
+# pnpm-workspace.yaml
+packages:
+  - 'packages/*'
+  - 'other-top-level-packages/**' # Optional: if you have other packages directly in the root

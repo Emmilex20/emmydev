@@ -1,0 +1,32 @@
+// packages/backend/tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "Node16", // <--- CHANGE THIS LINE FROM "CommonJS" TO "Node16"
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@config/*": ["config/*"],
+      "@models/*": ["models/*"],
+      "@routes/*": ["routes/*"],
+      "@controllers/*": ["controllers/*"],
+      "@middleware/*": ["middleware/*"],
+      "@utils/*": ["utils/*"]
+    },
+    "moduleResolution": "node16"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/@types/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ]
+}
